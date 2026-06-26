@@ -1,69 +1,114 @@
-# hoght-child-saftey-policy
-# Child Safety Standards (CSAE / CSAM)
+# Citysnap — Child Safety Policy (README)
 
+This folder contains the **Child Safety Standards** documents required for Google Play’s CSAE/CSAM (Child Sexual Abuse and Exploitation / Child Sexual Abuse Material) compliance and related app-store declarations.
+
+---
+
+## Files
+
+| File | Purpose |
+|------|---------|
+| [`child-safety-policy.md`](./child-safety-policy.md) | Markdown source — easy to edit, copy into Play Console, or convert to other formats |
+| [`child-safety.html`](./child-safety.html) | Hosted web page — upload to your website for a public URL |
+| This README | How to publish and use the policy |
+
+---
+
+## What this policy is for
+
+- **Google Play Console** → App content → **Child safety** (CSAE/CSAM standards)
+- Public URL that Play can link to (recommended)
+- Law enforcement / user reference for how Citysnap handles child safety
+
+**App name:** Citysnap  
+**Policy contact:** harshaldharpure9922@gmail.com  
+**General support:** support@citysnap.app  
 **Effective date:** March 31, 2026  
-**App:** Hoght – Anonymous dating thoughts, confessions & real feelings  
-**Contact:** harshaldharpure9922@gmail.com  
 
 ---
 
-Hoght is committed to protecting children and preventing child sexual abuse and exploitation (CSAE) and child sexual abuse material (CSAM) on our platform. We maintain the following safety standards.
+## Host the policy online
+
+Play Console works best with a **public HTTPS URL**.
+
+### Recommended URL
+
+```
+https://citysnap.app/child-safety
+```
+
+### Steps
+
+1. Upload `child-safety.html` to your web host (same place as `privacy.html`).
+2. Configure the server so `/child-safety` serves that file (or rename to `child-safety/index.html`).
+3. Open the URL in a browser and confirm it loads without login.
+
+### Optional: link from other pages
+
+Add a footer link on your privacy and guidelines pages:
+
+```html
+<a href="https://citysnap.app/child-safety">Child Safety Standards</a>
+```
 
 ---
 
-## 1) Zero tolerance for CSAE/CSAM
+## Google Play Console setup
 
-> **Hoght has zero tolerance for:**
-> - Any content that sexually exploits or endangers minors  
-> - Any CSAM (including links, imagery, grooming content, or instructions)  
-> - Sexual content involving minors in any form  
-
-Accounts engaging in CSAE/CSAM-related activity may be removed immediately and reported as required.
-
----
-
-## 2) Prohibited content and behavior
-
-- Sexual content involving anyone under 18 (real or fictional)  
-- Requests for sexual content involving minors  
-- Grooming, enticement, or attempts to meet minors for sexual purposes  
-- Sharing, requesting, or distributing CSAM  
-- Content that promotes or normalizes sexual exploitation of minors  
+1. Open [Google Play Console](https://play.google.com/console) → your app (**Citysnap**).
+2. Go to **Policy** → **App content** → **Child safety** (or CSAE/CSAM section).
+3. Provide:
+   - **Child safety standards URL:** `https://citysnap.app/child-safety`
+   - **Contact email for CSAE/CSAM:** `harshaldharpure9922@gmail.com`
+4. Confirm your app has in-app reporting (Citysnap: **Report** on posts/comments, **Block** on users).
+5. Save and submit for review if prompted.
 
 ---
 
-## 3) Reporting and moderation
+## How this relates to your app
 
-Users can report content that violates our standards. We review reports and take appropriate action, including content removal and account restrictions.
+Citysnap is a **local city social app** (not anonymous dating). The policy reflects:
 
-If you believe a child is in immediate danger, contact your local emergency services first.
-
----
-
-## 4) Cooperation with authorities
-
-Hoght complies with applicable child safety laws. Where legally required, we may preserve relevant information and report CSAE/CSAM to appropriate regional or national authorities.
+- Real-name posts and comments  
+- City-based feeds (Bangalore, Pune, Hyderabad, Chennai, Mumbai, Delhi)  
+- User tools: **Report** and **Block**  
+- Minimum age: **13+** (aligned with [`privacy.html`](./privacy.html))  
+- Account deletion from Profile  
 
 ---
 
-## 5) Contact for child safety concerns
+## Updating the policy
 
-For CSAE/CSAM concerns, law enforcement requests, or urgent safety issues, contact:
-
-**Email:** harshaldharpure9922@gmail.com  
-
-Please include:
-
-- The relevant content (quote or description)  
-- Any screenshots (if available)  
-- Date/time and any identifiers visible in-app  
+1. Edit **`child-safety-policy.md`** (source of truth for text).
+2. Apply the same changes to **`child-safety.html`** (keep HTML in sync).
+3. Bump the **Effective date** at the top of both files.
+4. Re-upload `child-safety.html` to your website.
+5. No app release is required unless you add an in-app link to this URL.
 
 ---
 
-## 6) Updates
+## Related documents in `docs/`
 
-We may update these standards. Changes will be reflected by updating the effective date on this page.
+| Document | URL (when hosted) |
+|----------|-------------------|
+| Privacy policy | `https://citysnap.app/privacy` → [`privacy.html`](./privacy.html) |
+| Child safety | `https://citysnap.app/child-safety` → [`child-safety.html`](./child-safety.html) |
+| Deep links | [`assetlinks.json`](./assetlinks.json) → `https://citysnap.app/.well-known/assetlinks.json` |
+| Play launch checklist | [`PLAY_STORE_LAUNCH.md`](./PLAY_STORE_LAUNCH.md) |
 
 ---
 
-© 2026 Hoght. All rights reserved.
+## Quick checklist before Play submission
+
+- [ ] `child-safety.html` live at `https://citysnap.app/child-safety`
+- [ ] Contact email `harshaldharpure9922@gmail.com` entered in Play Console
+- [ ] Privacy policy live at `https://citysnap.app/privacy`
+- [ ] Data safety form matches actual data use (Firebase, S3, FCM, Analytics)
+- [ ] In-app **Report** and **Block** tested on a real build
+
+---
+
+## Questions?
+
+Child safety / legal: **harshaldharpure9922@gmail.com**  
+App support: **support@citysnap.app**
