@@ -1,7 +1,7 @@
 # Citysnap — Child Safety Standards (CSAE / CSAM)
 
 **Effective date:** March 31, 2026  
-**App:** Citysnap — local city thoughts, snaps & conversations  
+**App:** Citysnap - local city thoughts, snaps & conversations  
 **Contact:** harshaldharpure9922@gmail.com  
 
 ---
