@@ -62,7 +62,7 @@ Citysnap complies with applicable child safety laws. Where legally required, we 
 For CSAE/CSAM concerns, law enforcement requests, or urgent safety issues, contact:
 
 **Email:** harshaldharpure9922@gmail.com  
-**General support:** support@citysnap.app  
+
 
 Please include:
 
@@ -81,4 +81,4 @@ We may update these standards. Changes will be reflected by updating the effecti
 
 © 2026 Citysnap. All rights reserved.
 
-**Host at:** https://citysnap.app/child-safety  
+
